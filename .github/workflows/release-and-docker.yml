@@ -81,6 +81,7 @@ jobs:
           name: ${{ github.event.inputs.version }}
           draft: true
           files: final-release/*
+          token: ${{ secrets.GITHUBTOKEN }}
 
   docker:
     needs: build
